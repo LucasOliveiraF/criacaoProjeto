@@ -14,7 +14,7 @@ import lombok.NoArgsConstructor;
 public class Aluno {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
-    private Long matricula;
+    private Long id;
 
     @Column(name = "nome", nullable = false)
     private String nome;
@@ -22,9 +22,9 @@ public class Aluno {
     @Column(name = "email", nullable = false)
     private String email;
 
-    //@Column(name = "matricula", nullable = false)
-    //private Long matricula;
+    @Column(name = "matricula", nullable = false)
+    private Long matricula;
 
     @Column(name = "conclusao_curso", nullable = false)
-    private long conclusao_curso;
+    private Long conclusao_curso;
 }
