@@ -1,4 +1,4 @@
-package com.ufcg.psoft.tcc_manager;
+package com.ufcg.psoft.tccmanager;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

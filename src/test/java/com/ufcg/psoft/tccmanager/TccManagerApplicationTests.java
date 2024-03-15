@@ -1,4 +1,4 @@
-package com.ufcg.psoft.tcc_manager;
+package com.ufcg.psoft.tccmanager;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
