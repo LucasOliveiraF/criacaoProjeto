@@ -66,6 +66,19 @@ public class AlunoV1Test {
 */
     @Test
     @DisplayName("Quando alteramos o nome do aluno com dados válidos")
+    void testeAluno2() throws Exception {
+        alunoDto.setNome("Aluno Um Alterado");
+
+        String reponseJsonString = driver.perform(put("alunos/" + aluno.getId())
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content(objectMapper.writeValueAsString(alunoDto)))
+                .andExpect(status().isOk())
+                .andDo(print())
+                .andReturn().getResponse().getContentAsString();
+    }
+    
+    @Test
+    @DisplayName("Quando alteramos o nome do aluno com dados válidos")
     void testeAluno() throws Exception {
         alunoDto.setNome("Aluno Um Alterado");
 
