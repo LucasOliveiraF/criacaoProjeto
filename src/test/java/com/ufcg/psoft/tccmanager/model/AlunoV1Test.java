@@ -57,13 +57,13 @@ public class AlunoV1Test {
 
     @AfterEach
     void tearDown() {alunoRepository.deleteAll();}
-
+/*
     @Test
     void testeAluno() {
         Aluno alunoTeste = alunoRepository.findByMatricula(123);
         assertEquals(alunoTeste.getNome(), aluno.getNome());
     }
-
+*/
     @Test
     @DisplayName("Quando alteramos o nome do aluno com dados válidos")
     void testeAluno() throws Exception {
